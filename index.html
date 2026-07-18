@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Pesaka Loka Kirana (PLK) - Company Profile</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- CSS Tautan (Pastikan Path Benar) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4">
+                <span><i class="bi bi-geo-alt-fill"></i> Tj. Priok - Jakarta Utara</span>
+                <span><i class="bi bi-telephone-fill"></i> +6221-430-0588</span>
+                <span><i class="bi bi-envelope-fill"></i> info@pesaka.co.id</span>
+                <span><i class="bi bi-clock-fill"></i> 08:00 - 17:00 WIB</span>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR MODERN & STICKY -->
+    <nav class="navbar navbar-expand-lg navbar-modern sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/PLKHEADER.svg" alt="Logo PLK" height="45">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Import</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LCL Import</a></li>
+                            <li><a class="dropdown-item" href="#">FCL Import</a></li>
+                            <li><a class="dropdown-item" href="#">Customs Clearance</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Export</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LCL Export</a></li>
+                            <li><a class="dropdown-item" href="#">FCL Export</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cargo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Project Cargo</a></li>
+                            <li><a class="dropdown-item" href="#">General Cargo</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PDPLB</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pusat Distribusi</a></li>
+                            <li><a class="dropdown-item" href="#">Layanan PLB</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tax</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tax Consultation</a></li>
+                            <li><a class="dropdown-item" href="#">Reporting</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Login Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="https://wms.pesaka.co.id/" class="btn btn-custom-primary px-4">
+                            <i class="bi bi-person-circle"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="container text-center hero-section">
+        <h1 class="hero-heading">Mitra Logistik & TPS<br>Terpercaya <span class="text-orange">Bisnis Anda</span></h1>
+        
+        <p class="hero-subheading mx-auto mt-3">Menyediakan gudang strategis, layanan distribusi, dan TPS berizin resmi untuk mendukung kelancaran rantai pasok.</p>
+        
+        <div class="mt-4">
+            <a href="#" class="btn btn-outline-orange rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2 text-decoration-none">
+                Mulai Bersama <span class="icon-circle"><i class="bi bi-arrow-up-right"></i></span>
+            </a>
+        </div>
+
+        <div class="hero-banner-wrapper shadow-lg">
+            <img id="mainBanner" src="img/H1.jpeg" alt="Warehouse PLK" class="hero-main-img">
+            
+            <div class="thumb-container">
+                <img src="img/H1.jpeg" class="thumb-item active" onclick="changeBanner(0)">
+                <img src="img/H2.jpeg" class="thumb-item" onclick="changeBanner(1)">
+                <img src="img/H3.jpeg" class="thumb-item" onclick="changeBanner(2)">
+                <img src="img/H4.jpeg" class="thumb-item" onclick="changeBanner(3)">
+                <img src="img/H5.jpeg" class="thumb-item" onclick="changeBanner(4)">
+            </div>
+
+            <div class="pagination-container">
+                <button class="page-btn" onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
+                <span class="page-item d-none d-md-inline" id="prevNum">05</span>
+                
+                <span class="page-item active" id="activeLabel">01 Racking Gudang</span>
+                
+                <span class="page-item d-none d-md-inline" id="nextNum">02</span>
+                <button class="page-btn" onclick="nextSlide()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL PERUSAHAAN (Sesuai Teks PPT) -->
+    <section class="container mt-5 pt-lg-5">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <span class="badge-orange mb-3">Profil Perusahaan</span>
+                <h2 class="display-5 fw-bold">Selamat Datang di PT. Pesaka Loka Kirana</h2>
+                <p class="text-muted mx-auto mt-3" style="max-width: 950px; font-size: 1.1rem; line-height: 1.8;">
+                    PT. Pesaka Loka Kirana merupakan perusahaan yang bergerak di bidang Tempat Penimbunan Sementara (TPS), pergudangan, penyewaan gudang dan jasa logistik terpadu di Indonesia. Perusahaan ini menyediakan layanan penyimpanan barang impor maupun ekspor, penyewaan gudang, container yard, serta dukungan distribusi dan pengelolaan logistik untuk berbagai kebutuhan industri. Dengan lokasi strategis yang dekat dengan kawasan Pelabuhan Tanjung Priok. PT. Pesaka Loka Kirana berkomitmen memberikan layanan yang aman, efisien, dan terpercaya. Berbekal pengalaman di bidang logistik dan pergudangan, perusahaan terus berkembang sebagai mitra terpercaya dalam solusi penyimpanan dan distribusi barang.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEBIJAKAN MUTU 5K (Sesuai Teks PPT) -->
+    <section class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold" style="color: #382724; letter-spacing: -1px;">Kebijakan Mutu <span class="text-warning">5K</span></h2>
+            <p class="text-muted">Dalam memberikan pelayanan, PT. Pesaka Loka Kirana menerapkan prinsip kerja "5K", yaitu:</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg col-md-4 col-sm-6">
+                <div class="mutu-card">
+                    <div class="mutu-number">01</div>
+                    <h5 class="mutu-title">Kejujuran</h5>
+                    <p class="mutu-desc">Menjalankan pekerjaan dengan integritas, transparansi, dan dapat dipercaya.</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-4 col-sm-6">
+                <div class="mutu-card">
+                    <div class="mutu-number">02</div>
+                    <h5 class="mutu-title">Komitmen</h5>
+                    <p class="mutu-desc">Memegang teguh tanggung jawab serta konsisten dalam memberikan pelayanan terbaik.</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-4 col-sm-6">
+                <div class="mutu-card">
+                    <div class="mutu-number">03</div>
+                    <h5 class="mutu-title">Kesiapan</h5>
+                    <p class="mutu-desc">Siap memberikan solusi dan pelayanan secara cepat, tanggap, dan profesional.</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-6">
+                <div class="mutu-card">
+                    <div class="mutu-number">04</div>
+                    <h5 class="mutu-title">Ketelitian</h5>
+                    <p class="mutu-desc">Mengutamakan ketepatan dan kecermatan dalam setiap proses operasional dan administrasi.</p>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-6">
+                <div class="mutu-card">
+                    <div class="mutu-number">05</div>
+                    <h5 class="mutu-title">Ketepatan</h5>
+                    <p class="mutu-desc">Menjamin ketepatan waktu, data, serta proses pelayanan kepada pelanggan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENGAPA MEMILIH PESAKA -->
+    <section class="why-choose-section">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold" style="letter-spacing: -1px; color: #382724;">Mengapa Memilih Pesaka</h2>
+            <p class="text-muted mx-auto mb-5" style="max-width: 800px; font-size: 1.1rem;">
+                Menghadirkan solusi logistik terintegrasi dengan efisiensi, keandalan, dan dedikasi penuh untuk kepuasan pelanggan.
+            </p>
+
+            <div class="row position-relative">
+                <div class="col-md-4 position-relative mb-5 mb-md-0">
+                    <div class="why-icon-box shadow">
+                        <i class="bi bi-handshake"></i>
+                    </div>
+                    <div class="why-connector d-none d-md-block">
+                        <svg width="100%" height="40" viewBox="0 0 100 40" preserveAspectRatio="none">
+                            <path d="M0,20 Q50,45 100,0" fill="none" stroke="#facc15" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="why-title">Berpengalaman &<br>Terpercaya</h4>
+                    <p class="why-desc px-lg-3">Lebih dari 50 tahun melayani industri logistik dan kepelabuhanan dengan reputasi yang teruji.</p>
+                </div>
+
+                <div class="col-md-4 position-relative mb-5 mb-md-0">
+                    <div class="why-icon-box shadow">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <div class="why-connector d-none d-md-block">
+                        <svg width="100%" height="40" viewBox="0 0 100 40" preserveAspectRatio="none">
+                            <path d="M0,0 Q50,45 100,20" fill="none" stroke="#facc15" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="why-title">Layanan Terpadu &<br>Efisien</h4>
+                    <p class="why-desc px-lg-3">Solusi one stop service yang cepat, terintegrasi, dan hemat biaya.</p>
+                </div>
+
+                <div class="col-md-4 position-relative">
+                    <div class="why-icon-box shadow">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h4 class="why-title">Lokasi Strategis &<br>Jaringan Luas</h4>
+                    <p class="why-desc px-lg-3">Dekat pelabuhan dan bandara, didukung jaringan nasional dan global.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRADIENT SECTION -->
+    <section class="services-gradient-wrapper container">
+        <div class="services-gradient-box">
+            <div class="row">
+                <div class="col-lg-5 d-flex flex-column justify-content-between mb-5 mb-lg-0 pr-lg-5">
+                    <div>
+                        <span class="sg-badge">Our Services</span>
+                        <h2 class="sg-title">Comprehensive<br>Logistics<br>Services</h2>
+                    </div>
+                    <div class="sg-nav-container mt-4 mt-lg-0">
+                        <button class="sg-nav-btn prev"><i class="bi bi-chevron-left"></i></button>
+                        <button class="sg-nav-btn next"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 sg-item">
+                            <div class="sg-icon-box"><i class="bi bi-ship"></i></div>
+                            <h4 class="sg-item-title">International Freight<br>Forwarding</h4>
+                            <p class="sg-item-desc">Layanan pengiriman laut dan udara untuk industrial & project cargo dengan jaminan keamanan & efisiensi biaya.</p>
+                        </div>
+                        <div class="col-md-6 sg-item">
+                            <div class="sg-icon-box"><i class="bi bi-file-earmark-text"></i></div>
+                            <h4 class="sg-item-title">Customs Broker &<br>Port Clearance</h4>
+                            <p class="sg-item-desc">Dukungan proses kepabeanan ekspor-impor melalui fasilitas ICD/TPS berizin resmi, dekat dari Pelabuhan Tj. Priok.</p>
+                        </div>
+                        <div class="col-md-6 sg-item">
+                            <div class="sg-icon-box"><i class="bi bi-building"></i></div>
+                            <h4 class="sg-item-title">General<br>Warehouse</h4>
+                            <p class="sg-item-desc">Gudang umum dengan sistem manajemen modern untuk penyimpanan aman, efisien, dan siap mendukung distribusi.</p>
+                        </div>
+                        <div class="col-md-6 sg-item">
+                            <div class="sg-icon-box"><i class="bi bi-boxes"></i></div>
+                            <h4 class="sg-item-title">Bonded<br>Warehouse</h4>
+                            <p class="sg-item-desc">Fasilitas gudang berikat untuk penyimpanan barang impor tanpa bea masuk, fleksibel untuk operasional pelanggan.</p>
+                        </div>
+                        <div class="col-md-6 sg-item">
+                            <div class="sg-icon-box"><i class="bi bi-box-seam"></i></div>
+                            <h4 class="sg-item-title">Container<br>Yard</h4>
+                            <p class="sg-item-desc">Area penumpukan kontainer dengan armada lengkap dan pemantauan real-time untuk menjamin keamanan kargo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JARINGAN STRATEGIS (Sesuai Teks PPT) -->
+    <section class="container my-5 py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="display-4 fw-bold hero-title-solid" style="letter-spacing: -2px;">Jaringan</h2>
+                <h2 class="display-4 fw-bold hero-title-outline text-warning" style="letter-spacing: -2px;">Strategis</h2>
+            </div>
+            <div class="col-lg-4 text-lg-end text-muted">
+                Lokasi pergudangan yang tersebar di titik-titik strategis untuk efisiensi distribusi Anda.
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="lokasi-card shadow-sm">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <i class="bi bi-building-fill text-warning fs-3"></i>
+                        <h4 class="lokasi-title">Head Office</h4>
+                    </div>
+                    <p class="lokasi-desc">Jl. Plumpang Semper, Jakarta Utara</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="lokasi-card shadow-sm">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <i class="bi bi-box-seam-fill text-warning fs-3"></i>
+                        <h4 class="lokasi-title">Gudang 222X</h4>
+                    </div>
+                    <p class="lokasi-desc">Jl. Bangka No.1, Jakarta Utara</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="lokasi-card shadow-sm">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <i class="bi bi-boxes text-warning fs-3"></i>
+                        <h4 class="lokasi-title">Gudang YOS</h4>
+                    </div>
+                    <p class="lokasi-desc">Jl. Yos Sudarso, Jakarta Utara</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="lokasi-card shadow-sm">
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <i class="bi bi-truck text-warning fs-3"></i>
+                        <h4 class="lokasi-title">Gudang PU</h4>
+                    </div>
+                    <p class="lokasi-desc">Jl. Irigasi Harapan Jaya Medan Satria, Bekasi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PESAKA GROUP (NEW LOGO SCROLL) -->
+    <!-- PESAKA GROUP (INFINITE SCROLL MARQUEE) -->
+    <section class="group-section">
+        <div class="container">
+            <!-- Header ala Referensi Pelindo -->
+            <div class="group-header-wrapper">
+                <h3 class="group-title">GRUP PESAKA</h3>
+                <div class="group-title-line"></div>
+            </div>
+            
+            <!-- Tempat logo jalan (Marquee) -->
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    
+                    <!-- SET 1 (Asli) -->
+                    <!-- Tambahin href ke link web masing-masing perusahaannya -->
+                    <a href="https://dkb.co.id" target="_blank" class="marquee-item">
+                        <img src="img/DKB.svg" class="group-logo-img" alt="DKB">
+                    </a>
+                    <a href="https://tpp.co.id" target="_blank" class="marquee-item">
+                        <img src="img/TPP.svg" class="group-logo-img" alt="TPP">
+                    </a>
+                    <a href="https://raya.co.id" target="_blank" class="marquee-item">
+                        <img src="img/RAYA.svg" class="group-logo-img" alt="RAYA">
+                    </a>
+                    <a href="https://sms.co.id" target="_blank" class="marquee-item">
+                        <img src="img/SMS.svg" class="group-logo-img" alt="SMS">
+                    </a>
+                    <a href="https://pla.co.id" target="_blank" class="marquee-item">
+                        <img src="img/PLA.svg" class="group-logo-img" alt="PLA">
+                    </a>
+
+                    <!-- SET 2 (Duplikat, ini WAJIB ada supaya efek muternya gak kelihatan putus) -->
+                    <a href="https://dkb.co.id" target="_blank" class="marquee-item">
+                        <img src="img/DKB.svg" class="group-logo-img" alt="DKB">
+                    </a>
+                    <a href="https://tpp.co.id" target="_blank" class="marquee-item">
+                        <img src="img/TPP.svg" class="group-logo-img" alt="TPP">
+                    </a>
+                    <a href="https://raya.co.id" target="_blank" class="marquee-item">
+                        <img src="img/RAYA.svg" class="group-logo-img" alt="RAYA">
+                    </a>
+                    <a href="https://sms.co.id" target="_blank" class="marquee-item">
+                        <img src="img/SMS.svg" class="group-logo-img" alt="SMS">
+                    </a>
+                    <a href="https://pla.co.id" target="_blank" class="marquee-item">
+                        <img src="img/PLA.svg" class="group-logo-img" alt="PLA">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="certificate-section">
+        <div class="container text-center">
+            <h2 class="cert-title">CERTIFICATES</h2>
+            <div class="cert-divider"></div>
+            <p class="text-muted mb-5">PT. Pesaka Loka Kirana secara resmi tersertifikasi dengan standar kualitas dan kepabeanan internasional.</p>
+            
+            <div class="d-flex justify-content-center flex-wrap gap-5 align-items-center">
+                <div class="text-center">
+                    <img src="img/ISO_9001-2015.svg.webp" alt="ISO 9001:2015" class="cert-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_9001-2015.svg/512px-ISO_9001-2015.svg.png'">
+                    <p class="mt-3 text-muted fw-bold small">ISO 9001:2015 Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-5 mb-lg-0 pe-lg-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="img/PLK.svg" alt="Logo PLK" height="40" style="filter: brightness(0) invert(1);">
+                        <span class="footer-logo-text ms-2">PESAKA LOKA KIRANA</span>
+                    </div>
+                    <div class="footer-heading mb-1">Alamat Head Office</div>
+                    <div class="footer-text mb-4">
+                        Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara,<br>
+                        Kec. Koja, Jakarta Utara, Indonesia 14260<br>
+                        Telp: 021-4300588
+                    </div>
+                    <div class="footer-heading mb-1">Alamat Gudang 222X</div>
+                    <div class="footer-text">
+                        Jl. Bangka No.1, RT.7/RW.16, Tj. Priok,<br>
+                        Jakarta Utara, Indonesia 14310
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="footer-heading">Layanan Kami</div>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">International Freight Forwarding</a></li>
+                        <li><a href="#" class="footer-link">Customs Broker & Port Clearance</a></li>
+                        <li><a href="#" class="footer-link">General Warehouse</a></li>
+                        <li><a href="#" class="footer-link">Bonded Warehouse</a></li>
+                        <li><a href="#" class="footer-link">Container Yard</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <div class="footer-heading">Perusahaan</div>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Tentang Pesaka Loka</a></li>
+                        <li><a href="#" class="footer-link">Karir</a></li>
+                        <li><a href="#" class="footer-link">Siaran Pers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-heading">Tautan Lainnya</div>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Ketentuan Penggunaan</a></li>
+                        <li><a href="#" class="footer-link">Kebijakan Privasi</a></li>
+                        <li><a href="https://wms.pesaka.co.id/" class="footer-link">WMS Portal</a></li>
+                        <li><a href="#" class="footer-link">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom flex-column flex-md-row">
+                <div class="mb-3 mb-md-0">
+                    &copy; 2026 PT Pesaka Loka Kirana. All Rights Reserved.
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-accent-line"></div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()" title="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ALL CUSTOM JS -->
+    <script>
+        /* --- BANNER AUTO SLIDE LOGIC --- */
+        const slides = [
+            { img: 'img/H1.jpeg', label: '01 Racking Gudang' },
+            { img: 'img/H2.jpeg', label: '02 Area TPS Priok' },
+            { img: 'img/H3.jpeg', label: '03 Logistik Darat' },
+            { img: 'img/H4.jpeg', label: '04 Alat Berat' },
+            { img: 'img/H5.jpeg', label: '05 Gudang Bekasi' }
+        ];
+
+        let currentIndex = 0;
+        let slideInterval;
+
+        function changeBanner(index) {
+            currentIndex = index;
+            document.getElementById('mainBanner').src = slides[currentIndex].img;
+            document.getElementById('activeLabel').innerText = slides[currentIndex].label;
+
+            let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            let nextIndex = (currentIndex + 1) % slides.length;
+            
+            document.getElementById('prevNum').innerText = '0' + (prevIndex + 1);
+            document.getElementById('nextNum').innerText = '0' + (nextIndex + 1);
+
+            let thumbs = document.querySelectorAll('.thumb-item');
+            thumbs.forEach((thumb, i) => {
+                if(i === currentIndex) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+            resetInterval();
+        }
+
+        function nextSlide() {
+            let next = (currentIndex + 1) % slides.length;
+            changeBanner(next);
+        }
+
+        function prevSlide() {
+            let prev = (currentIndex - 1 + slides.length) % slides.length;
+            changeBanner(prev);
+        }
+
+        function startInterval() {
+            slideInterval = setInterval(nextSlide, 5000); 
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+
+        startInterval(); // Start auto-slide on load
+
+        /* --- SCROLL TO TOP LOGIC --- */
+        let mybutton = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
