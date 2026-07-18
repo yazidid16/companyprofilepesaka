@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karir & Peluang Kerja - PT. Pesaka Loka Kirana (PLK)</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Link to Separate CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4">
+                <span><i class="bi bi-geo-alt-fill"></i> Tj. Priok - Jakarta Utara</span>
+                <span><i class="bi bi-telephone-fill"></i> +6221-430-0588</span>
+                <span><i class="bi bi-envelope-fill"></i> info@pesaka.co.id</span>
+                <span><i class="bi bi-clock-fill"></i> 08:00 - 17:00 WIB</span>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR MODERN & STICKY -->
+    <nav class="navbar navbar-expand-lg navbar-modern sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/PLKHEADER.svg" alt="Logo PLK" height="45" onerror="this.src='https://placehold.co/120x45/111/fff?text=PLK'">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Import</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LCL Import</a></li>
+                            <li><a class="dropdown-item" href="#">FCL Import</a></li>
+                            <li><a class="dropdown-item" href="#">Customs Clearance</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Export</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LCL Export</a></li>
+                            <li><a class="dropdown-item" href="#">FCL Export</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cargo</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Project Cargo</a></li>
+                            <li><a class="dropdown-item" href="#">General Cargo</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PDPLB</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pusat Distribusi</a></li>
+                            <li><a class="dropdown-item" href="#">Layanan PLB</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tax</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tax Consultation</a></li>
+                            <li><a class="dropdown-item" href="#">Reporting</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Login Button -->
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="https://wms.pesaka.co.id/" class="btn btn-custom-primary px-4">
+                            <i class="bi bi-person-circle"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAREER HERO SECTION -->
+    <header class="career-hero">
+        <div class="container">
+            <span class="badge-orange mb-3">Pesaka Careers</span>
+            <h1 class="career-hero-title">Mari Bertumbuh Bersama Kami</h1>
+            <p class="career-hero-desc">Bentuk masa depan logistik, kepabeanan, dan Tempat Penimbunan Sementara (TPS) di Indonesia bersama talenta-talenta andal PT. Pesaka Loka Kirana.</p>
+        </div>
+    </header>
+
+    <!-- JOB FINDER / FILTER & LISTING -->
+    <main class="container mb-5 pb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                
+                <!-- Filter Card -->
+                <div class="filter-card">
+                    <form id="jobFilterForm" class="row g-3">
+                        <div class="col-md-5">
+                            <label class="form-label fw-bold small text-muted">Cari Pekerjaan</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-transparent border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                                <input type="text" id="searchKeyword" class="form-control form-control-custom border-start-0 ps-0" placeholder="Contoh: Supervisor, Staff, Manager...">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold small text-muted">Departemen</label>
+                            <select id="filterDept" class="form-select form-select-custom">
+                                <option value="">Semua Departemen</option>
+                                <option value="Warehouse">Warehouse Department</option>
+                                <option value="IT">IT Department</option>
+                                <option value="Finance">Finance & Acc Department</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold small text-muted">Lokasi Kerja</label>
+                            <select id="filterLocation" class="form-select form-select-custom">
+                                <option value="">Semua Lokasi</option>
+                                <option value="Tanjung Priok">Tanjung Priok (Gudang 222X)</option>
+                                <option value="Bekasi">Pondok Ungu (Gudang PU)</option>
+                                <option value="Jakarta Utara">Koja (Head Office)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1 d-flex align-items-end">
+                            <button type="button" onclick="resetFilters()" class="btn btn-outline-secondary w-100 py-2 rounded-3" title="Reset Filters">
+                                <i class="bi bi-arrow-counterclockwise"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Job Vacancy Lists (Rendered Dynamically / Filterable via Class) -->
+                <div class="job-list-container">
+
+                    <!-- Job Card 1 -->
+                    <div class="job-card mix-job" data-dept="Warehouse" data-loc="Tanjung Priok">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                            <div>
+                                <span class="job-tag job-tag-full">Full Time</span>
+                                <h3 class="job-title mt-2">Warehouse Supervisor / Koordinator</h3>
+                                <div class="job-meta">
+                                    <span class="job-meta-item"><i class="bi bi-building"></i> Warehouse Dept</span>
+                                    <span class="job-meta-item"><i class="bi bi-geo-alt"></i> Tj. Priok, Jakarta Utara</span>
+                                    <span class="job-meta-item"><i class="bi bi-calendar-event"></i> Batas: 30 Agustus 2026</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 mt-md-0">
+                                <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#modalSupervisor">Lihat Detail <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="job-card mix-job" data-dept="IT" data-loc="Jakarta Utara">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                            <div>
+                                <span class="job-tag job-tag-full">Full Time</span>
+                                <h3 class="job-title mt-2">IT Support & Network Specialist</h3>
+                                <div class="job-meta">
+                                    <span class="job-meta-item"><i class="bi bi-building"></i> IT Department</span>
+                                    <span class="job-meta-item"><i class="bi bi-geo-alt"></i> Head Office, Koja</span>
+                                    <span class="job-meta-item"><i class="bi bi-calendar-event"></i> Batas: 15 September 2026</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 mt-md-0">
+                                <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#modalIT">Lihat Detail <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 3 -->
+                    <div class="job-card mix-job" data-dept="Finance" data-loc="Jakarta Utara">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                            <div>
+                                <span class="job-tag job-tag-contract">Contract</span>
+                                <h3 class="job-title mt-2">Finance & Acc Staff</h3>
+                                <div class="job-meta">
+                                    <span class="job-meta-item"><i class="bi bi-building"></i> Finance & Acc Dept</span>
+                                    <span class="job-meta-item"><i class="bi bi-geo-alt"></i> Head Office, Koja</span>
+                                    <span class="job-meta-item"><i class="bi bi-calendar-event"></i> Batas: 28 Agustus 2026</span>
+                                </div>
+                            </div>
+                            <div class="mt-4 mt-md-0">
+                                <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#modalFinance">Lihat Detail <i class="bi bi-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- PESAKA GROUP LOGOS (Marquee Loop) -->
+    <section class="group-section">
+        <div class="container">
+            <div class="group-header-wrapper">
+                <h3 class="group-title">GRUP PESAKA</h3>
+                <div class="group-title-line"></div>
+            </div>
+            
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- SET 1 -->
+                    <a href="https://dkb.co.id" target="_blank" class="marquee-item">
+                        <img src="img/DKB.svg" class="group-logo-img" alt="DKB" onerror="this.src='https://placehold.co/100x40/ccc/333?text=DKB'">
+                    </a>
+                    <a href="https://tpp.co.id" target="_blank" class="marquee-item">
+                        <img src="img/TPP.svg" class="group-logo-img" alt="TPP" onerror="this.src='https://placehold.co/100x40/ccc/333?text=TPP'">
+                    </a>
+                    <a href="https://raya.co.id" target="_blank" class="marquee-item">
+                        <img src="img/RAYA.svg" class="group-logo-img" alt="RAYA" onerror="this.src='https://placehold.co/100x40/ccc/333?text=RAYA'">
+                    </a>
+                    <a href="https://sms.co.id" target="_blank" class="marquee-item">
+                        <img src="img/SMS.svg" class="group-logo-img" alt="SMS" onerror="this.src='https://placehold.co/100x40/ccc/333?text=SMS'">
+                    </a>
+                    <a href="https://pla.co.id" target="_blank" class="marquee-item">
+                        <img src="img/PLA.svg" class="group-logo-img" alt="PLA" onerror="this.src='https://placehold.co/100x40/ccc/333?text=PLA'">
+                    </a>
+
+                    <!-- SET 2 -->
+                    <a href="https://dkb.co.id" target="_blank" class="marquee-item">
+                        <img src="img/DKB.svg" class="group-logo-img" alt="DKB" onerror="this.src='https://placehold.co/100x40/ccc/333?text=DKB'">
+                    </a>
+                    <a href="https://tpp.co.id" target="_blank" class="marquee-item">
+                        <img src="img/TPP.svg" class="group-logo-img" alt="TPP" onerror="this.src='https://placehold.co/100x40/ccc/333?text=TPP'">
+                    </a>
+                    <a href="https://raya.co.id" target="_blank" class="marquee-item">
+                        <img src="img/RAYA.svg" class="group-logo-img" alt="RAYA" onerror="this.src='https://placehold.co/100x40/ccc/333?text=RAYA'">
+                    </a>
+                    <a href="https://sms.co.id" target="_blank" class="marquee-item">
+                        <img src="img/SMS.svg" class="group-logo-img" alt="SMS" onerror="this.src='https://placehold.co/100x40/ccc/333?text=SMS'">
+                    </a>
+                    <a href="https://pla.co.id" target="_blank" class="marquee-item">
+                        <img src="img/PLA.svg" class="group-logo-img" alt="PLA" onerror="this.src='https://placehold.co/100x40/ccc/333?text=PLA'">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="certificate-section">
+        <div class="container text-center">
+            <h2 class="cert-title">CERTIFICATES</h2>
+            <div class="cert-divider"></div>
+            <p class="text-muted mb-5">PT. Pesaka Loka Kirana secara resmi tersertifikasi dengan standar kualitas dan kepabeanan internasional.</p>
+            
+            <div class="d-flex justify-content-center flex-wrap gap-5 align-items-center">
+                <div class="text-center">
+                    <img src="img/ISO_9001-2015.svg.webp" alt="ISO 9001:2015" class="cert-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_9001-2015.svg/512px-ISO_9001-2015.svg.png'">
+                    <p class="mt-3 text-muted fw-bold small">ISO 9001:2015 Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-5 mb-lg-0 pe-lg-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="img/PLK.svg" alt="Logo PLK" height="40" style="filter: brightness(0) invert(1);" onerror="this.src='https://placehold.co/120x40/111/fff?text=PLK'">
+                        <span class="footer-logo-text ms-2">PESAKA LOKA KIRANA</span>
+                    </div>
+                    <div class="footer-heading mb-1">Alamat Head Office</div>
+                    <div class="footer-text mb-4">
+                        Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara,<br>
+                        Kec. Koja, Jakarta Utara, Indonesia 14260<br>
+                        Telp: 021-4300588
+                    </div>
+                    <div class="footer-heading mb-1">Alamat Gudang 222X</div>
+                    <div class="footer-text">
+                        Jl. Bangka No.1, RT.7/RW.16, Tj. Priok,<br>
+                        Jakarta Utara, Indonesia 14310
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <div class="footer-heading">Layanan Kami</div>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">International Freight Forwarding</a></li>
+                        <li><a href="#" class="footer-link">Customs Broker & Port Clearance</a></li>
+                        <li><a href="#" class="footer-link">General Warehouse</a></li>
+                        <li><a href="#" class="footer-link">Bonded Warehouse</a></li>
+                        <li><a href="#" class="footer-link">Container Yard</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <div class="footer-heading">Perusahaan</div>
+                    <ul class="footer-list">
+                        <li><a href="index.html" class="footer-link">Tentang Pesaka Loka</a></li>
+                        <li><a href="career.html" class="footer-link">Karir</a></li>
+                        <li><a href="#" class="footer-link">Siaran Pers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-heading">Tautan Lainnya</div>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Ketentuan Penggunaan</a></li>
+                        <li><a href="#" class="footer-link">Kebijakan Privasi</a></li>
+                        <li><a href="https://wms.pesaka.co.id/" class="footer-link">WMS Portal</a></li>
+                        <li><a href="#" class="footer-link">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom flex-column flex-md-row">
+                <div class="mb-3 mb-md-0">
+                    &copy; 2026 PT Pesaka Loka Kirana. All Rights Reserved.
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-accent-line"></div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()" title="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+    <!-- =========================================
+       MODALS DETAILS & APPLY JOBS
+       ========================================= -->
+
+    <!-- Modal Supervisor -->
+    <div class="modal fade modal-custom" id="modalSupervisor" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-dark"><i class="bi bi-briefcase-fill text-warning me-2"></i> Detail Posisi: Warehouse Supervisor</h5>
+                    <button type="button" class="btn-close" data-bs-shadow="none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold text-primary">Deskripsi Pekerjaan:</h6>
+                    <p class="text-muted">Mengawasi, memantau, dan mengoordinasikan seluruh operasional di dalam Tempat Penimbunan Sementara (TPS) PT. Pesaka Loka Kirana guna memastikan kepatuhan alur kerja, keselamatan kargo, serta efisiensi tim penunjang operasional di lapangan.</p>
+                    
+                    <h6 class="fw-bold text-primary mt-4">Kualifikasi:</h6>
+                    <ul class="text-muted">
+                        <li>Pendidikan minimal D3 / S1 Manajemen Logistik, Transportasi, atau bidang relevan.</li>
+                        <li>Memiliki pengalaman minimal 2-3 tahun sebagai Supervisor Gudang atau TPS.</li>
+                        <li>Memahami sistem WMS (Warehouse Management System) & operasional pabean di Tanjung Priok.</li>
+                        <li>Memiliki jiwa kepemimpinan, disiplin, dan mampu bekerja di bawah tekanan.</li>
+                    </ul>
+
+                    <div class="alert alert-info mt-4" role="alert">
+                        <h6 class="alert-heading fw-bold mb-1"><i class="bi bi-envelope-paper-fill me-2"></i> Cara Melamar:</h6>
+                        Kirimkan CV terbaru dan dokumen pendukung ke email <strong class="text-primary">hrd@pesaka.co.id</strong> dengan subjek: <strong class="text-dark">PLK_Warehouse Supervisor_Nama</strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                    <a href="mailto:hrd@pesaka.co.id?subject=PLK_Warehouse%20Supervisor_Nama" class="btn btn-custom-primary">Kirim CV Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal IT Support -->
+    <div class="modal fade modal-custom" id="modalIT" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-dark"><i class="bi bi-briefcase-fill text-warning me-2"></i> Detail Posisi: IT Support & Network</h5>
+                    <button type="button" class="btn-close" data-bs-shadow="none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold text-primary">Deskripsi Pekerjaan:</h6>
+                    <p class="text-muted">Menjamin ketersediaan infrastruktur jaringan, hardware, software, server, dan memelihara sistem informasi pergudangan (WMS) internal agar operasional digitalisasi Pesaka Group berjalan lancar tanpa hambatan.</p>
+                    
+                    <h6 class="fw-bold text-primary mt-4">Kualifikasi:</h6>
+                    <ul class="text-muted">
+                        <li>Pendidikan S1 Teknik Informatika / Sistem Informasi / Ilmu Komputer.</li>
+                        <li>Memiliki pemahaman mendalam tentang Routing, Switching, Troubleshooting Hardware, & Database SQL.</li>
+                        <li>Diutamakan yang memiliki pengalaman integrasi sistem logistik / API.</li>
+                        <li>Bersedia ditempatkan di Head Office Koja & mobile ke area Gudang Priok / Bekasi jika dibutuhkan.</li>
+                    </ul>
+
+                    <div class="alert alert-info mt-4" role="alert">
+                        <h6 class="alert-heading fw-bold mb-1"><i class="bi bi-envelope-paper-fill me-2"></i> Cara Melamar:</h6>
+                        Kirimkan CV terbaru dan dokumen pendukung ke email <strong class="text-primary">hrd@pesaka.co.id</strong> dengan subjek: <strong class="text-dark">PLK_IT Support_Nama</strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                    <a href="mailto:hrd@pesaka.co.id?subject=PLK_IT%20Support_Nama" class="btn btn-custom-primary">Kirim CV Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Finance -->
+    <div class="modal fade modal-custom" id="modalFinance" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-dark"><i class="bi bi-briefcase-fill text-warning me-2"></i> Detail Posisi: Finance & Acc Staff</h5>
+                    <button type="button" class="btn-close" data-bs-shadow="none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold text-primary">Deskripsi Pekerjaan:</h6>
+                    <p class="text-muted">Mengelola administrasi keuangan harian, menyusun rekonsiliasi kas/bank, memproses faktur pembayaran pelanggan logistik, dan mengumpulkan dokumen pajak sesuai regulasi perpajakan.</p>
+                    
+                    <h6 class="fw-bold text-primary mt-4">Kualifikasi:</h6>
+                    <ul class="text-muted">
+                        <li>Pendidikan minimal D3 / S1 Akuntansi atau Keuangan.</li>
+                        <li>Menguasai program Microsoft Excel tingkat lanjut dan software akuntansi korporat.</li>
+                        <li>Memiliki ketelitian tinggi, cermat, jujur, dan bertanggung jawab (Prinsip 5K).</li>
+                        <li>Memahami perhitungan perpajakan logistik (Pajak PPh 23, PPN) adalah poin plus.</li>
+                    </ul>
+
+                    <div class="alert alert-info mt-4" role="alert">
+                        <h6 class="alert-heading fw-bold mb-1"><i class="bi bi-envelope-paper-fill me-2"></i> Cara Melamar:</h6>
+                        Kirimkan CV terbaru dan dokumen pendukung ke email <strong class="text-primary">hrd@pesaka.co.id</strong> dengan subjek: <strong class="text-dark">PLK_Finance Acc_Nama</strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+                    <a href="mailto:hrd@pesaka.co.id?subject=PLK_Finance%20Acc_Nama" class="btn btn-custom-primary">Kirim CV Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BOOTSTRAP & SEARCH FILTER JS -->
+    <script>
+        /* --- FILTER & SEARCH INTERACTIVE LOGIC --- */
+        const searchInput = document.getElementById('searchKeyword');
+        const filterDept = document.getElementById('filterDept');
+        const filterLocation = document.getElementById('filterLocation');
+        const jobCards = document.querySelectorAll('.mix-job');
+
+        function filterJobs() {
+            const searchVal = searchInput.value.toLowerCase();
+            const deptVal = filterDept.value;
+            const locVal = filterLocation.value;
+
+            jobCards.forEach(card => {
+                const title = card.querySelector('.job-title').textContent.toLowerCase();
+                const cardDept = card.getAttribute('data-dept');
+                const cardLoc = card.getAttribute('data-loc');
+
+                const matchesSearch = title.includes(searchVal);
+                const matchesDept = !deptVal || cardDept === deptVal;
+                const matchesLoc = !locVal || cardLoc === locVal;
+
+                if (matchesSearch && matchesDept && matchesLoc) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterJobs);
+        filterDept.addEventListener('change', filterJobs);
+        filterLocation.addEventListener('change', filterJobs);
+
+        function resetFilters() {
+            document.getElementById('jobFilterForm').reset();
+            jobCards.forEach(card => card.style.display = 'block');
+        }
+
+        /* --- SCROLL TO TOP LOGIC --- */
+        let mybutton = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
